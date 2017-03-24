@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2C2A4A;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  margin: 12px;
+}
+
+p,
+h1,
+h2,
+button {
+  font-family: "Quicksand" sans-serif;
+  font-size: 20px;
+}
+
+.unselectable-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.colors {
+  float: left;
+  max-width: 1140px;
+  width: 100%;
+  margin: 24px 0 48px auto;
+}
+
+.colorsplash {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.colorsplash > p {
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+}
+
+.mintwhite {
+  background: #F7FFF7;
+  color: #2C2A4A;
+}
+
+.cyan {
+  background: #5DFDCB;
+  color: #F7FFF7;
+}
+.cyan > p {
+  position: relative;
+  top: 14px;
+}
+
+.textbg {
+  background: #525170;
+  color: #F7FFF7;
+}
+.textbg > p {
+  position: relative;
+  top: 18px;
+}
+
+.text {
+  margin: 0 0 48px 12px;
+  color: #F7FFF7;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text > p:last-child {
+  font-size: 24px;
+}
+
+.buttons {
+  display: block;
+  float: left;
+  height: 200px;
+}
+
+.btn-soft {
+  display: block;
+  width: 200px;
+  height: 75px;
+  margin: 12px 12px 12px 12px;
+  background: none;
+  border: 2px solid #5DFDCB;
+  border-radius: 75px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #F7FFF7;
+  transition: 0.5s;
+}
+
+.btn-soft:hover {
+  background: #5DFDCB;
+  font-weight: bold;
+}
+.btn-soft:hover p {
+  font-weight: bold;
+}
+
+.btn-soft:active {
+  animation-name: button-hover;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes button-hover {
+  50% {
+    transform: scale(0.9);
+  }
+}
+.spacethings {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+}
+
+.rocket {
+  display: block;
+  margin: 50px auto;
+  max-width: 500px;
+  animation-name: rocket-lives;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rocket-lives {
+  0%,
+	100% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    transform: translate(0, 20px) scale(0.8);
+  }
+}
