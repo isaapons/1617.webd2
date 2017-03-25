@@ -4,12 +4,14 @@
 
 body {
   background-image: url("../assets/images/background.svg");
+  background-size: 960px 540px;
   max-width: 1140px;
   width: 100%;
   margin: 0 auto; }
 
 main {
-  margin: 12px; }
+  margin: 12px;
+  height: 2160px; }
 
 p,
 h1,
@@ -27,7 +29,7 @@ button {
 .colors {
   float: left;
   max-width: 1140px;
-  width: 100%;
+  width: 50%;
   margin: 24px 0 48px auto; }
 
 .colorsplash {
@@ -134,8 +136,13 @@ button:focus {
 @keyframes rocket-lives {
   0%,
 	100% {
-    transform: translate(0, 0) scale(0.8); }
+    transform: translate(0, 0) scale(1); }
   50% {
-    transform: translate(0, 20px) scale(0.8); } }
+    transform: translate(0, 20px) scale(1); } }
+.moon {
+  width: 680px;
+  position: fixed;
+  bottom: -340px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=styleguide.cssgit.map */
