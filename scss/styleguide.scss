@@ -20,7 +20,7 @@ p,
 h1,
 h2,
 button {
-	font-family: "Quicksand" sans-serif;
+	font-family: "Quicksand", sans-serif;
 	font-size: 20px;
 }
 
@@ -106,6 +106,10 @@ h2 {
 	display: block;
 	float: left;
 	height: 200px;
+}
+
+button:focus {
+	outline:0;
 }
 
 $btn-soft-height-radius: 75px;
