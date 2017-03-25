@@ -6,7 +6,7 @@
 }
 
 body {
-	background: #2C2A4A;
+	background-image: url("../assets/images/background.svg");
 	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
@@ -178,4 +178,8 @@ $rocketscale:0.8;
 	50% {
 		transform: translate(0, 20px) scale($rocketscale);
 	}
+}
+
+.moon {
+
 }
