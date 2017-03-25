@@ -1,5 +1,6 @@
 // MAIN
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
 * {
 	box-sizing: border-box;
 }
@@ -91,9 +92,14 @@ h2 {
 	font-size: 24px;
 	font-weight: bold;
 }
+.selected {
+	color:#5DFDCB;
+}
+
 .text > p:last-child {
 	font-size: 24px;
 }
+
 
 // BUTTONS
 .buttons {
