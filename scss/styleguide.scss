@@ -7,7 +7,7 @@
 
 body {
 	background-image: url("../assets/images/background.svg");
-background-size: 960px 540px;
+	background-size: 960px 540px;
 	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
@@ -183,8 +183,9 @@ $rocketscale:1;
 }
 
 .moon {
-	width: 680px;
-	position: fixed;
-	bottom: -340px;
+	position: absolute;
+	transform: scale(0.8);
+	bottom: -2500px;
 	margin: 0 auto;
+	z-index: -1;
 }

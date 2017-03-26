@@ -11,10 +11,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: rgba(26,35,126 ,1) url('../assets/images/home2.jpg') no-repeat center center fixed;
-  background-size: cover;
-
-  color: rgba(232,234,246 ,1);
+  background-image: url("../assets/images/background.svg");
+  background-size: 960px 540px;
 }
 
 .intro {
@@ -25,4 +23,14 @@ body {
 
   background: rgba(41,182,246 ,1);
   color: rgba(1,87,155 ,1);
+}
+
+main, header, footer {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
 }
