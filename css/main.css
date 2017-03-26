@@ -32,11 +32,21 @@ header {
 .rocket {
   display: block;
   width: 10vw;
-  max-width: 250px;
+  max-width: 150px;
   margin: 100px auto;
   position: relative;
-  top: 5vw; }
+  top: 2vh;
+  animation-name: rocket-lives;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite; }
 
+@keyframes rocket-lives {
+  0%,
+	100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, 20px); } }
 .quote {
   display: flex;
   flex-direction: column;
