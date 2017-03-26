@@ -8,7 +8,7 @@ html, body {
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
   background-image: url("../assets/images/background.svg");
   background-size: 960px 540px; }
 
@@ -43,7 +43,7 @@ header {
 
 @keyframes rocket-lives {
   0%,
-	100% {
+  100% {
     transform: translate(0, 0); }
   50% {
     transform: translate(0, 20px); } }
@@ -55,5 +55,22 @@ header {
 .quote h1, p {
   text-align: right;
   margin: 2px; }
+
+.column-container {
+  display: flex;
+  background: #525170;
+  border-radius: 12px;
+  padding: 0 5%;
+  width: 50vw;
+  margin: 0 auto; }
+
+.column-3 {
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 33.33334%;
+  padding: 0.5vw 1vw 0.5vw 1vw; }
+  .column-3 > p, .column-3 h2 {
+    text-align: left; }
 
 /*# sourceMappingURL=main.css.map */
