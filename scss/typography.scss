@@ -3,35 +3,44 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.42;
-  color: #F7FFF7; }
+  color: #F7FFF7;
+}
 
 h1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.42; }
+  line-height: 1.42;
+}
 
 h2, h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.42; }
+  line-height: 1.42;
+}
 
 a {
   text-decoration: none;
   color: #F7FFF7;
   transition: 0.5s;
-  line-height: 1.42; }
+  line-height: 1.42;
+}
 
 a:hover {
-  color: #5DFDCB; }
+  color:#5DFDCB;
+}
 
 @media only screen and (max-width: 1024px) {
   body {
-    font-size: 12px; }
-    body h1 {
-      font-size: 22px; }
-    body h2, body h3, body h4, body h5, body h6 {
-      font-size: 14px; } }
+    font-size: 12px;
+& h1 {
+  font-size: 22px;
+}
+& h2, h3, h4, h5, h6 {
+  font-size: 14px;
+}
+  }
 
-/*# sourceMappingURL=typography.css.map */
+
+}
