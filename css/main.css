@@ -32,5 +32,17 @@ main, header, footer {
 
 header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav > a {
+  margin-left: 25px;
 }
