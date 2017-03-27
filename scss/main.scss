@@ -1,3 +1,5 @@
+//MAIN
+
 * {
   box-sizing: border-box;
 }
@@ -20,6 +22,10 @@ main, header, footer {
   margin: 0 auto;
 }
 
+.clear {
+  clear:both;
+}
+// NAVIGATION
 header {
   margin-top: 1.1vh;
   display: flex;
@@ -35,6 +41,8 @@ header {
 .main-nav > a {
   margin-left: 25px;
 }
+
+// MAIN ELEMENTS
 
 .rocket {
   display: block;
@@ -88,7 +96,7 @@ header {
   display:flex;
   justify-content: center;
   position:relative;
-  top: 500px;
+  top: 200px;
   background: #525170;
   border-radius: 12px;
   padding: 0 5% ;
@@ -116,7 +124,8 @@ footer, .moon {
   bottom: 0;
   margin: 0 auto;
 }
-// tablet
+
+// TABLET
 
 @media only screen and (max-width: 768px) {
 
@@ -127,11 +136,21 @@ footer, .moon {
   .column-3 {
     width: 100%;
   }
+h1 {
+  font-size: 24px;
+}
 
+h2, h3, h4, h5, h6 {
+  font-size: 20px;
+}
+
+body, a {
+  font-size: 18px;
+}
 
 }
 
-// phone
+// PHONE
 
 @media only screen and (max-width: 425px) {
   main, header, footer {
@@ -143,5 +162,6 @@ footer, .moon {
 
   .column-3 {
     width: 100%;
+    margin-top: 10%;
   }
 }

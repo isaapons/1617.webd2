@@ -16,6 +16,9 @@ main, header, footer {
   width: 60vw;
   margin: 0 auto; }
 
+.clear {
+  clear: both; }
+
 header {
   margin-top: 1.1vh;
   display: flex;
@@ -68,7 +71,7 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 500px;
+  top: 200px;
   background: #525170;
   border-radius: 12px;
   padding: 0 5%;
@@ -93,7 +96,16 @@ footer, .moon {
     flex-direction: column; }
 
   .column-3 {
-    width: 100%; } }
+    width: 100%; }
+
+  h1 {
+    font-size: 24px; }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 20px; }
+
+  body, a {
+    font-size: 18px; } }
 @media only screen and (max-width: 425px) {
   main, header, footer {
     width: 100vw; }
@@ -102,6 +114,7 @@ footer, .moon {
     width: 100vw; }
 
   .column-3 {
-    width: 100%; } }
+    width: 100%;
+    margin-top: 10%; } }
 
 /*# sourceMappingURL=main.css.map */
