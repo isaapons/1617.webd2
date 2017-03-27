@@ -134,11 +134,14 @@ footer, .moon {
 // phone
 
 @media only screen and (max-width: 425px) {
+main {
+  width: 100vw;
+}
   .column-container {
     width: 100vw;
   }
 
   .column-3 {
-    width: 33.333334%;
+    width: 100%;
   }
 }
