@@ -96,14 +96,10 @@ footer, .moon {
 
 @media only screen and (max-width: 768px) {
   .column-container {
-    flex-direction: column;
-    top: 400px; }
+    flex-direction: column; }
 
   .column-3 {
-    width: 100%; }
-
-  .planet {
-    top: 250px; } }
+    width: 100%; } }
 @media only screen and (max-width: 425px) {
   main, header, footer {
     width: 100vw; }
