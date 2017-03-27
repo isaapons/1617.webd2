@@ -35,6 +35,7 @@ header {
 .rocket {
   display: block;
   width: 10vw;
+  min-width: 75px;
   max-width: 150px;
   margin: 100px auto;
   position: relative;
@@ -63,6 +64,7 @@ header {
 .planet {
   float: left;
   width: 30vw;
+  min-width: 300px;
   position: relative;
   left: -20px;
   top: 7vh;
@@ -94,10 +96,14 @@ footer, .moon {
 
 @media only screen and (max-width: 768px) {
   .column-container {
-    flex-direction: column; }
+    flex-direction: column;
+    top: 400px; }
 
   .column-3 {
-    width: 100%; } }
+    width: 100%; }
+
+  .planet {
+    top: 250px; } }
 @media only screen and (max-width: 425px) {
   main, header, footer {
     width: 100vw; }
