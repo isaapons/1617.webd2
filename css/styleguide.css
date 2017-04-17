@@ -5,13 +5,13 @@
 body {
   background-image: url("../assets/images/background.svg");
   background-size: 960px 540px;
-  max-width: 1140px;
-  width: 100%;
+  width: vw;
+  height: 100vh;
   margin: 0 auto; }
 
-main {
-  margin: 12px;
-  height: 2160px; }
+main, header {
+  width: 60vw;
+  margin: 0 auto; }
 
 p,
 h1,
@@ -26,9 +26,22 @@ button {
   -ms-user-select: none;
   user-select: none; }
 
+header {
+  margin-top: 1.1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end; }
+
+.main-nav > a {
+  margin-left: 25px; }
+
 .colors {
   float: left;
-  max-width: 1140px;
+  max-width: 60vw;
   width: 50%;
   margin: 24px 48px 48px 0; }
 
@@ -116,6 +129,38 @@ button:focus {
 @keyframes button-hover {
   50% {
     transform: scale(0.9); } }
+.formulare {
+  display: block;
+  float: left;
+  width: 500px;
+  margin: 24px; }
+
+form > input, input:focus, textarea, textarea:focus {
+  border: none;
+  border-style: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  background: #525170;
+  padding: 12px;
+  margin: 24px; }
+
+textarea, textarea:focus {
+  resize: none;
+  width: 448px;
+  height: 448px; }
+
+.icons {
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: flex-start; }
+
+.material-icons {
+  font-size: 48px;
+  margin: 12px;
+  color: #F7FFF7; }
+
 .spacethings {
   display: flex;
   justify-content: flex-start;

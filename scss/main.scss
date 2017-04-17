@@ -122,12 +122,6 @@ header {
 
 // FOOTER
 
-footer, .moon {
-  position: absolute;
-  bottom: 0;
-  margin: 0 auto;
-}
-
 // TABLET
 
 @media only screen and (max-width: 768px) {
@@ -138,6 +132,10 @@ footer, .moon {
 
   .column-3 {
     width: 100%;
+  }
+  .planet {
+    top: 100px;
+    left: -100px;
   }
 }
 
