@@ -5,7 +5,8 @@
 "elements/icons.scss",
 "core/navigation.scss",
 "core/typography.scss",
-"elements/forms.scss";
+"elements/forms.scss",
+"background/space.scss";
 
 * {
 	box-sizing: border-box;
@@ -124,8 +125,6 @@ h2 {
 
 
 // BACKGROUND STUFF
-$divwidthrocket: 500px;
-$rocketscale:1;
 .spacethings {
 	display: flex;
 	justify-content: flex-start;
@@ -136,25 +135,7 @@ $rocketscale:1;
 }
 
 // ROCKET
-.rocket {
-	display: block;
-	margin: 50px auto;
-	max-width: $divwidthrocket;
-	animation-name: rocket-lives;
-	animation-duration: 4s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
-}
 
-@keyframes rocket-lives {
-	0%,
-	100% {
-		transform: translate(0, 0) scale($rocketscale);
-	}
-	50% {
-		transform: translate(0, 20px) scale($rocketscale);
-	}
-}
 
 .moon {
 	position: absolute;

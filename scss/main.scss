@@ -3,7 +3,8 @@
 "elements/icons.scss",
 "core/navigation.scss",
 "core/typography.scss",
-"elements/forms.scss";
+"elements/forms.scss",
+"background/space.scss";
 
 //MAIN
 
@@ -32,50 +33,8 @@ main, header, footer {
 .clear {
   clear:both;
 }
-// NAVIGATION
-header {
-  margin-top: 1.1vh;
-  display: flex;
-  justify-content: space-between;
-  align-items:baseline;;
-}
-
-.main-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.main-nav > a {
-  margin-left: 25px;
-}
 
 // MAIN ELEMENTS
-
-.rocket {
-  display: block;
-  width: 10vw;
-  min-width: 75px;
-  max-width:150px;
-  margin: 100px auto;
-  position:relative;
-  top: 2vh;
-  animation-name: rocket-lives;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-
-}
-
-@keyframes rocket-lives {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, 20px);
-  }
-}
-
 
 .quote {
   display: flex;
@@ -88,16 +47,6 @@ header {
 .quote h1, p {
   text-align: right;
   margin: 2px;
-}
-
-.planet {
-  float: left;
-  width: 30vw;
-  min-width: 300px;
-  position: relative;
-  left: -20px;
-  top: 7vh;
-  margin-right: 70vw;
 }
 
 //COLUMN
@@ -126,8 +75,6 @@ header {
     text-align: left;
   }
 }
-
-// FOOTER
 
 // TABLET
 

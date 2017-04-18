@@ -97,6 +97,30 @@ textarea, textarea:focus {
   width: 448px;
   height: 448px; }
 
+.rocket {
+  display: block;
+  margin: 50px auto;
+  max-width: 150px;
+  animation-name: rocket-lives;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite; }
+
+@keyframes rocket-lives {
+  0%,
+	100% {
+    transform: translate(0, 0) scale(1); }
+  50% {
+    transform: translate(0, 20px) scale(1); } }
+.planet {
+  float: left;
+  width: 30vw;
+  min-width: 300px;
+  position: relative;
+  left: -20px;
+  top: 7vh;
+  margin-right: 70vw; }
+
 * {
   box-sizing: border-box; }
 
@@ -194,24 +218,9 @@ h2 {
   justify-content: flex-start;
   overflow: hidden;
   margin: 0 auto;
-  width: 500px;
+  width: 150px;
   height: 400px; }
 
-.rocket {
-  display: block;
-  margin: 50px auto;
-  max-width: 500px;
-  animation-name: rocket-lives;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite; }
-
-@keyframes rocket-lives {
-  0%,
-	100% {
-    transform: translate(0, 0) scale(1); }
-  50% {
-    transform: translate(0, 20px) scale(1); } }
 .moon {
   position: absolute;
   transform: scale(0.8);

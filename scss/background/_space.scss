@@ -1,0 +1,35 @@
+// Rocket
+$divwidthrocket: 150px;
+$rocketscale:1;
+.rocket {
+  display: block;
+  margin: 50px auto;
+  max-width: $divwidthrocket;
+  animation-name: rocket-lives;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rocket-lives {
+	0%,
+	100% {
+		transform: translate(0, 0) scale($rocketscale);
+	}
+	50% {
+		transform: translate(0, 20px) scale($rocketscale);
+	}
+}
+
+
+// Planet
+
+.planet {
+  float: left;
+  width: 30vw;
+  min-width: 300px;
+  position: relative;
+  left: -20px;
+  top: 7vh;
+  margin-right: 70vw;
+}
