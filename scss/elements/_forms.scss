@@ -1,0 +1,17 @@
+form > input, input:focus, textarea, textarea:focus {
+	border:none;
+	border-style: none;
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	background:#525170;
+	padding: 12px;
+	margin: 24px;
+}
+
+textarea, textarea:focus {
+	resize: none;
+	width: 448px;
+	height: 448px
+
+}

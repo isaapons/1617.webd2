@@ -1,0 +1,14 @@
+header {
+  margin-top: 1.1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end; }
+
+.main-nav > a {
+  margin-left: 25px; }
+
+/*# sourceMappingURL=navigation.css.map */

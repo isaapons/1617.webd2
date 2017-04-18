@@ -1,0 +1,35 @@
+button:focus {
+  outline:0;
+}
+
+$btn-soft-height-radius: 75px;
+.btn {
+  display: block;
+  width: 200px;
+  height: $btn-soft-height-radius;
+  margin: 12px 12px 12px 12px;
+  background: none;
+  border: 2px solid #5DFDCB;
+  border-radius: $btn-soft-height-radius;
+  cursor: pointer;
+  font-size: 24px;
+  color: #F7FFF7;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #5DFDCB;
+  font-weight: bold;
+}
+
+.btn:active {
+  animation-name: button-hover;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes button-hover {
+  50% {
+    transform: scale(0.9);
+  }
+}
