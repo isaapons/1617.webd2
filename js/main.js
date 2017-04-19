@@ -1,3 +1,10 @@
 ;(function() {
-  alert('Welcome to the GDM Web Template developed by drdynscript!');
+
+  document.getElementById("hamburger")
+  .addEventListener("click", function(){
+  var pressed = document.querySelectorAll(".main-nav > a");
+  pressed.className += "appear";
+  }, false);
+
+
 })();

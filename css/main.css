@@ -3,11 +3,9 @@
   font-size: 36px;
   margin: 12px;
   color: #F7FFF7;
-  line-height: 1.42; }
+  line-height: 1.42;
+  cursor: pointer; }
 
-@media only screen and (max-width: 768px) {
-  .material-icons {
-    font-size: 24px; } }
 * {
   box-sizing: border-box; }
 
@@ -53,12 +51,13 @@ header {
   color: #F7FFF7;
   margin-right: 0;
   position: relative;
-  top: 7px; }
+  top: 8px; }
+
+.appear {
+  display: flex;
+  flex-direction: column; }
 
 @media only screen and (max-width: 950px) {
-  header {
-    width: 60vw; }
-
   .main-nav > a {
     display: none; }
 
@@ -239,6 +238,9 @@ textarea, textarea:focus {
 
   .column-3 {
     width: 100%;
-    margin-top: 5%; } }
+    margin-top: 5%; }
+
+  .rocket {
+    width: 75px; } }
 
 /*# sourceMappingURL=main.css.map */

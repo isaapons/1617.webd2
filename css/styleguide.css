@@ -32,11 +32,9 @@ button:focus {
   font-size: 36px;
   margin: 12px;
   color: #F7FFF7;
-  line-height: 1.42; }
+  line-height: 1.42;
+  cursor: pointer; }
 
-@media only screen and (max-width: 768px) {
-  .material-icons {
-    font-size: 24px; } }
 header {
   margin-top: 1.1vh;
   display: flex;
@@ -57,12 +55,13 @@ header {
   color: #F7FFF7;
   margin-right: 0;
   position: relative;
-  top: 7px; }
+  top: 8px; }
+
+.appear {
+  display: flex;
+  flex-direction: column; }
 
 @media only screen and (max-width: 950px) {
-  header {
-    width: 60vw; }
-
   .main-nav > a {
     display: none; }
 
