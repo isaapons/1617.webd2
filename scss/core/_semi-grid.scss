@@ -1,0 +1,40 @@
+.column-container {
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position:relative;
+  top: 200px;
+  background: #525170;
+  border-radius: 12px;
+  padding: 0 5% ;
+  margin: 12px auto;
+}
+
+.column- {
+  display: block;
+  float:left;
+  overflow: hidden;
+  padding: 0.5vw 1vw 0.5vw 1vw;
+
+  &1 {
+    @extend .column-;
+    width: 100%;
+  }
+  &2 {
+    @extend .column-;
+    width: 50%;
+  }
+  &3 {
+    @extend .column-;
+    width: 33.333334%;
+  }
+
+  &4 {
+    @extend .column-;
+    width: 25%;
+  }
+
+  & > p, h2 {
+    text-align: left;
+  }
+}

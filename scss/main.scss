@@ -1,8 +1,11 @@
-@import "elements/buttons.scss",
-"elements/colors.scss",
-"elements/icons.scss",
+@import
+
 "core/navigation.scss",
 "core/typography.scss",
+"core/semi-grid.scss",
+"elements/buttons.scss",
+"elements/colors.scss",
+"elements/icons.scss",
 "elements/forms.scss",
 "background/space.scss";
 
@@ -48,34 +51,6 @@ main, header, footer {
   text-align: right;
   margin: 2px;
 }
-
-//COLUMN
-
-.column-container {
-  display:flex;
-  justify-content: center;
-  position:relative;
-  top: 200px;
-  background: #525170;
-  border-radius: 12px;
-  padding: 0 5% ;
-  margin: 12px auto;
-}
-
-.column-3 {
-  display: block;
-  float:left;
-  overflow: hidden;
-  width: 33.33334%;
-  padding: 0.5vw 1vw 0.5vw 1vw;
-
-
-
-  & > p, h2 {
-    text-align: left;
-  }
-}
-
 // TABLET
 
 @media only screen and (max-width: 768px) {

@@ -121,6 +121,10 @@ textarea, textarea:focus {
   top: 7vh;
   margin-right: 70vw; }
 
+.moon {
+  margin-bottom: -24px;
+  width: 680px; }
+
 * {
   box-sizing: border-box; }
 
