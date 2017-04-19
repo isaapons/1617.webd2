@@ -3,6 +3,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items:baseline;
+	height: 50px;
 }
 
 .main-nav {
@@ -10,6 +11,24 @@ header {
 	justify-content: flex-end;
 }
 
-.main-nav > a {
+.main-nav > a, i {
 	margin-left: 25px;
+}
+
+#hamburger {
+	display: none;
+	margin: 0;
+	position: relative;
+	top: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.main-nav > a {
+		display: none;
+	}
+	#hamburger {
+		display: block;
+
+	}
 }

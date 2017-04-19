@@ -1,5 +1,6 @@
 @import
 
+"core/page.scss",
 "core/navigation.scss",
 "core/typography.scss",
 "core/semi-grid.scss",
@@ -11,31 +12,7 @@
 
 //MAIN
 
-* {
-  box-sizing: border-box;
-}
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  background-image: url("../assets/images/background.svg");
-  background-size: 960px 540px;
-}
-
-main, header, footer {
-  width: 60vw;
-  margin: 0 auto;
-}
-
-.clear {
-  clear:both;
-}
 
 // MAIN ELEMENTS
 

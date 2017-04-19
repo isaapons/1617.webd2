@@ -28,7 +28,7 @@ button:focus {
   50% {
     transform: scale(0.9); } }
 .material-icons {
-  font-size: 48px;
+  font-size: 36px;
   margin: 12px;
   color: #F7FFF7; }
 
@@ -36,15 +36,28 @@ header {
   margin-top: 1.1vh;
   display: flex;
   justify-content: space-between;
-  align-items: baseline; }
+  align-items: baseline;
+  height: 50px; }
 
 .main-nav {
   display: flex;
   justify-content: flex-end; }
 
-.main-nav > a {
+.main-nav > a, i {
   margin-left: 25px; }
 
+#hamburger {
+  display: none;
+  margin: 0;
+  position: relative;
+  top: 8px; }
+
+@media only screen and (max-width: 768px) {
+  .main-nav > a {
+    display: none; }
+
+  #hamburger {
+    display: block; } }
 body, input, button, textarea {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;

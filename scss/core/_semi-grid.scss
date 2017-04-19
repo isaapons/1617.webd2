@@ -28,11 +28,29 @@
     @extend .column-;
     width: 33.333334%;
   }
-
   &4 {
     @extend .column-;
     width: 25%;
   }
+  &5 {
+    @extend .column-;
+    width: 20%;
+  }
+
+  &6 {
+    @extend .column-;
+    width: 16.666667%;
+  }
+  &7 {
+    @extend .column-;
+    width: 14.2857143%;
+  }
+  &8 {
+    @extend .column-;
+    width: 12.5%;
+  }
+
+
 
   & > p, h2 {
     text-align: left;
