@@ -37,8 +37,15 @@ header {
 
 	#hamburger, {
 		display: inline-block;
+	}
+	nav:hover {
+		flex-direction: column;
 
+	}
 
+	nav:hover a {
+display: block;
+		text-align: right;
 	}
 
 }
