@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 @import
+"elements/icons.scss",
+"elements/colors.scss",
 "core/page.scss",
 "core/navigation.scss",
 "core/typography.scss",
 "core/semi-grid.scss",
 "elements/buttons.scss",
-"elements/colors.scss",
-"elements/icons.scss",
 "elements/forms.scss",
 "background/space.scss";
 
@@ -49,7 +48,7 @@
 // PHONE
 
 @media only screen and (max-width: 425px) {
-  main, header, footer {
+  main, footer {
     width: 100vw;
   }
   .column-container {

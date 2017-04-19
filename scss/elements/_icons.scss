@@ -2,4 +2,11 @@
 	font-size: 36px;
 	margin: 12px;
 	color: #F7FFF7;
+	line-height: 1.42;
+}
+
+@media only screen and (max-width: 768px) {
+	.material-icons {
+		font-size: 24px;
+	}
 }

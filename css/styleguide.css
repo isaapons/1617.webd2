@@ -31,8 +31,12 @@ button:focus {
 .material-icons {
   font-size: 36px;
   margin: 12px;
-  color: #F7FFF7; }
+  color: #F7FFF7;
+  line-height: 1.42; }
 
+@media only screen and (max-width: 768px) {
+  .material-icons {
+    font-size: 24px; } }
 header {
   margin-top: 1.1vh;
   display: flex;
@@ -42,23 +46,31 @@ header {
 
 .main-nav {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  align-items: baseline; }
 
 .main-nav > a, i {
   margin-left: 25px; }
 
 #hamburger {
   display: none;
-  margin: 0;
+  color: #F7FFF7;
+  margin-right: 0;
   position: relative;
-  top: 8px; }
+  top: 7px; }
 
 @media only screen and (max-width: 950px) {
+  header {
+    width: 60vw; }
+
   .main-nav > a {
     display: none; }
 
   #hamburger {
     display: inline-block; } }
+@media only screen and (max-width: 425px) {
+  header {
+    width: 90vw; } }
 body, input, button, textarea {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;

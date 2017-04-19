@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+.material-icons {
+  font-size: 36px;
+  margin: 12px;
+  color: #F7FFF7;
+  line-height: 1.42; }
+
+@media only screen and (max-width: 768px) {
+  .material-icons {
+    font-size: 24px; } }
 * {
   box-sizing: border-box; }
 
@@ -34,23 +42,31 @@ header {
 
 .main-nav {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  align-items: baseline; }
 
 .main-nav > a, i {
   margin-left: 25px; }
 
 #hamburger {
   display: none;
-  margin: 0;
+  color: #F7FFF7;
+  margin-right: 0;
   position: relative;
-  top: 8px; }
+  top: 7px; }
 
 @media only screen and (max-width: 950px) {
+  header {
+    width: 60vw; }
+
   .main-nav > a {
     display: none; }
 
   #hamburger {
     display: inline-block; } }
+@media only screen and (max-width: 425px) {
+  header {
+    width: 90vw; } }
 body, input, button, textarea {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
@@ -151,11 +167,6 @@ button:focus {
 @keyframes button-hover {
   50% {
     transform: scale(0.9); } }
-.material-icons {
-  font-size: 36px;
-  margin: 12px;
-  color: #F7FFF7; }
-
 form > input, input:focus, textarea, textarea:focus {
   border: none;
   border-style: none;
@@ -220,7 +231,7 @@ textarea, textarea:focus {
     top: 100px;
     left: -100px; } }
 @media only screen and (max-width: 425px) {
-  main, header, footer {
+  main, footer {
     width: 100vw; }
 
   .column-container {

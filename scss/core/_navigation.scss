@@ -11,6 +11,7 @@ header {
 .main-nav {
 	display: flex;
 	justify-content: flex-end;
+	align-items: baseline;
 }
 
 .main-nav > a, i {
@@ -19,18 +20,30 @@ header {
 
 #hamburger {
 	display: none;
-	margin: 0;
+	color: $mintwhite;
+	margin-right: 0;
 	position: relative;
-	top: 8px;
+	top: 7px;
 }
 
 @media only screen and (max-width: 950px) {
 
+	header {
+		width: 60vw;
+	}
 	.main-nav > a {
 		display: none;
 	}
-	#hamburger {
+
+	#hamburger, {
 		display: inline-block;
 
+
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	header {
+		width: 90vw;
 	}
 }
