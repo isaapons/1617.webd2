@@ -47,36 +47,38 @@ header {
   justify-content: flex-end;
   align-items: baseline; }
 
-.main-nav > a, i {
-  margin-left: 25px; }
+.main-nav > a {
+  margin-left: 24px; }
 
 #hamburger {
   display: none;
   color: #F7FFF7;
   margin-right: 0;
   position: relative;
-  top: 8px; }
-
-.appear {
-  display: flex;
-  flex-direction: column; }
+  top: 9px; }
 
 @media only screen and (max-width: 950px) {
+  .main-logo {
+    width: 75vw; }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end; }
+
+  .main-nav {
+    display: none;
+    position: relative;
+    top: 9px; }
+
   .main-nav > a {
-    display: none; }
+    margin: 0;
+    text-align: left;
+    width: 75px; }
 
   #hamburger {
-    display: inline-block; }
-
-  nav:hover {
-    flex-direction: column; }
-
-  nav:hover a {
-    display: block;
-    text-align: right; } }
-@media only screen and (max-width: 425px) {
-  header {
-    width: 90vw; } }
+    display: block; } }
 body, input, button, textarea {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;

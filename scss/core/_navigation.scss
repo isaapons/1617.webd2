@@ -1,21 +1,19 @@
-
-
 header {
 	margin-top: 1.1vh;
 	display: flex;
 	justify-content: space-between;
 	align-items:baseline;
 	height: 50px;
-}
 
+}
 .main-nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: baseline;
 }
 
-.main-nav > a, i {
-	margin-left: 25px;
+.main-nav > a {
+	margin-left: 24px;
 }
 
 #hamburger {
@@ -23,35 +21,34 @@ header {
 	color: $mintwhite;
 	margin-right: 0;
 	position: relative;
-	top: 8px;
+	top: 9px;
 }
-.appear {
-	display: flex;
-	flex-direction: column;
-}
+
 @media only screen and (max-width: 950px) {
 
-	.main-nav > a {
-		display: none;
+	.main-logo {
+		width: 75vw;
 	}
+	.header {
 
-	#hamburger, {
-		display: inline-block;
 	}
-	nav:hover {
+	.nav-container {
+		display:flex;
 		flex-direction: column;
-
+		justify-content: flex-start;
+		align-items: flex-end;
 	}
-
-	nav:hover a {
-display: block;
-		text-align: right;
+	.main-nav {
+		display: none;
+		position: relative;
+		top: 9px;
 	}
-
-}
-
-@media only screen and (max-width: 425px) {
-	header {
-		width: 90vw;
+	.main-nav > a {
+		margin: 0;
+		text-align: left;
+		width: 75px;
+	}
+	#hamburger {
+		display: block;
 	}
 }

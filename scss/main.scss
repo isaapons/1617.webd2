@@ -2,8 +2,8 @@
 @import
 "elements/icons.scss",
 "elements/colors.scss",
-"core/page.scss",
 "core/navigation.scss",
+"core/page.scss",
 "core/typography.scss",
 "core/semi-grid.scss",
 "elements/buttons.scss",
@@ -48,7 +48,7 @@
 
 // PHONE
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
   main, footer {
     width: 100vw;
   }
@@ -63,5 +63,9 @@
 
   .rocket {
     width: 75px;
+  }
+
+  header {
+    width: 90vw;
   }
 }
