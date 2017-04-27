@@ -64,6 +64,7 @@ header > h2 {
 		left: 0;
 		z-index: 2;
 		transform: translateX(-100vw);
+		margin-top: 75px;
 	}
 
 	.nav--isvisible {
@@ -91,7 +92,7 @@ header > h2 {
 	.nav-items {
 		display: flex;
 		flex-direction: column;
-		margin-top: 50vw;
+		margin-top: 30vh;
 		margin-left: 40%;
 		align-items: flex-start;
 	}
@@ -102,10 +103,14 @@ header > h2 {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
 	.main-nav {
-width: 75vw;
+		width: 75vw;
 	}
+}
+
+
+@media only screen and (max-width: 500px) {
 	.cross--isvisible {
 		margin-right: 36px;
 	}

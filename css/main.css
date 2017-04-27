@@ -4,7 +4,8 @@
   margin: 12px;
   color: #F7FFF7;
   line-height: 1.42;
-  cursor: pointer; }
+  cursor: pointer;
+  user-select: none; }
 
 * {
   box-sizing: border-box;
@@ -86,7 +87,8 @@ header > h2 {
     top: 0;
     left: 0;
     z-index: 2;
-    transform: translateX(-100vw); }
+    transform: translateX(-100vw);
+    margin-top: 75px; }
 
   .nav--isvisible {
     transform: translateX(0);
@@ -109,17 +111,17 @@ header > h2 {
   .nav-items {
     display: flex;
     flex-direction: column;
-    margin-top: 50vw;
+    margin-top: 30vh;
     margin-left: 40%;
     align-items: flex-start; }
 
   .nav-items > a {
     margin-left: 0;
     margin-top: 5vh; } }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .main-nav {
-    width: 75vw; }
-
+    width: 75vw; } }
+@media only screen and (max-width: 500px) {
   .cross--isvisible {
     margin-right: 36px; }
 
