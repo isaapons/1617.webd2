@@ -1,16 +1,14 @@
 * {
   box-sizing: border-box;
-}
-
-html {
-  margin: 0;
+  margin:0;
   padding: 0;
 }
 
-
+html {
+  overflow-x: hidden;
+}
 body {
   width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
   background-image: url("../assets/images/background.svg");
   background-size: 960px 540px;
@@ -19,13 +17,17 @@ body {
 main, header, footer {
   width: 60vw;
   margin: 0 auto;
-}
-
-footer {
-  display:flex;
-  justify-content: center;
+  max-width: 1140px;
 }
 
 .clear {
   clear:both;
+}
+
+.clear:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }

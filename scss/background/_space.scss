@@ -12,20 +12,20 @@ $rocketscale:1;
 }
 
 @keyframes rocket-lives {
-	0%,
-	100% {
-		transform: translate(0, 0) scale($rocketscale);
-	}
-	50% {
-		transform: translate(0, 20px) scale($rocketscale);
-	}
+  0%,
+  100% {
+    transform: translate(0, 0) scale($rocketscale);
+  }
+  50% {
+    transform: translate(0, 20px) scale($rocketscale);
+  }
 }
 
 
 // Planet
 
 .planet {
-  float: left;
+  z-index: -1;
   width: 30vw;
   min-width: 300px;
   position: relative;
@@ -39,4 +39,6 @@ $rocketscale:1;
 .moon {
   margin-bottom: -24px;
   width: 680px;
+  margin: 0 auto;
+  display: block;
 }
