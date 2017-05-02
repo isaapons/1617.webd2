@@ -1,0 +1,146 @@
+// MAIN
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import "elements/buttons.scss",
+"elements/colors.scss",
+"elements/icons.scss",
+"core/navigation.scss",
+"core/typography.scss",
+"elements/forms.scss",
+"background/space.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../assets/images/background.svg");
+	background-size: 960px 540px;
+	width: vw;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+main, header {
+	width: 60vw;
+	margin: 0 auto;
+
+}
+
+.unselectable-text {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+// COLORS
+.colors {
+	float: left;
+	max-width: 60vw;
+	width: 50%;
+	margin: 24px 48px 48px 0;
+}
+
+.colorsplash {
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 12px;
+	border-radius: 50%;
+	overflow: hidden;
+	& > p {
+		text-align: center;
+		font-size: 20px;
+		position: relative;
+		top: 40px;
+	}
+}
+
+.mintwhite {
+	background: $mintwhite;
+	color: #2C2A4A;
+}
+
+.cyan {
+	background: $cyan;
+	color: #F7FFF7;
+	& > p {
+		position: relative;
+		top: 14px;
+	}
+}
+
+.textbg {
+	background: $text-background;
+	color: #F7FFF7;
+	& > p {
+		position: relative;
+		top: 18px;
+	}
+}
+
+// TEXT
+.text {
+	margin: 0 0 48px 12px;
+	color: #F7FFF7;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.selected {
+	color:#5DFDCB;
+}
+
+.text > p:last-child {
+	font-size: 24px;
+}
+
+// BUTTONS
+.buttons {
+	display: block;
+	float: left;
+	height: 200px;
+}
+// FORMS
+.formulare {
+	display: block;
+	float: left;
+	width: 500px;
+	margin: 24px;
+}
+// ICONS
+
+.icons {
+	position: relative;
+	top: 200px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+// BACKGROUND STUFF
+.spacethings {
+	display: flex;
+	justify-content: flex-start;
+	overflow: hidden;
+	margin: 0 auto;
+	width: $divwidthrocket;
+	height: 400px;
+}
+
+// ROCKET
+
+
+.moon {
+	position: absolute;
+	transform: scale(0.8);
+	bottom: -2500px;
+	margin: 0 auto;
+	z-index: -1;
+}

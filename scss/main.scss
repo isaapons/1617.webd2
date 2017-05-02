@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 @import
+"core/real-grid.scss",
 "elements/icons.scss",
 "elements/colors.scss",
 "core/page.scss",
@@ -9,11 +10,10 @@
 "core/semi-grid.scss",
 "elements/buttons.scss",
 "elements/forms.scss",
-"background/space.scss";
+"background/space.scss",
+"core/portfolio-grid.scss";
 
 //MAIN
-
-
 
 // MAIN ELEMENTS
 
@@ -22,7 +22,7 @@
 
 }
 
-.quote h1, p {
+.quote h1, .quote p {
   text-align: right;
   margin: 2px;
 }
@@ -37,11 +37,6 @@
 // TABLET
 
 @media only screen and (max-width: 768px) {
-
-
-  .column-container {
-    flex-direction: column;
-  }
 
   .column-3 {
     width: 100%;

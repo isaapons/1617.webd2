@@ -1,0 +1,75 @@
+.g__wrapper {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.g__container { /* wrapper heeft altijd 1 container */
+  display: block;
+  max-width: 1140px; /* altijd 1140 px */
+  margin: 0 auto; /* centreert */
+  padding: 0px 24px;
+}
+
+.g__row { /* een container bevat meerdere rijen met dezelfde content */
+  display: block;
+  margin: 0px -24px;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.g__column {
+  position: relative;
+  float: left;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.g__column-12 {
+  width: 100%;
+}
+
+.g__column-11 {
+  width: 91.6667%;
+}
+
+.g__column-10 {
+  width: 83.3333%;
+}
+
+.g__column-9 {
+  width: 75%;
+}
+
+.g__column-8 {
+  width: 66.6667%;
+}
+
+.g__column-7 {
+  width: 58.3333%;
+}
+
+.g__column-6 {
+  width: 50%;
+}
+
+.g__column-5 {
+  width: 41.6667%;
+}
+
+.g__column-4 {
+  width: 33.3333%;
+}
+
+.g__column-3 {
+  width: 25%;
+}
+
+.g__column-2 {
+  width: 16.6667%;
+}
+
+.g__column-1 {
+  width: 8.3333%;
+}

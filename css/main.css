@@ -1,11 +1,73 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+.g__wrapper {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+.g__container {
+  /* wrapper heeft altijd 1 container */
+  display: block;
+  max-width: 1140px;
+  /* altijd 1140 px */
+  margin: 0 auto;
+  /* centreert */
+  padding: 0px 24px; }
+
+.g__row {
+  /* een container bevat meerdere rijen met dezelfde content */
+  display: block;
+  margin: 0px -24px;
+  padding: 0;
+  overflow: hidden; }
+
+.g__column {
+  position: relative;
+  float: left;
+  padding: 0 16px;
+  overflow: hidden; }
+
+.g__column-12 {
+  width: 100%; }
+
+.g__column-11 {
+  width: 91.6667%; }
+
+.g__column-10 {
+  width: 83.3333%; }
+
+.g__column-9 {
+  width: 75%; }
+
+.g__column-8 {
+  width: 66.6667%; }
+
+.g__column-7 {
+  width: 58.3333%; }
+
+.g__column-6 {
+  width: 50%; }
+
+.g__column-5 {
+  width: 41.6667%; }
+
+.g__column-4 {
+  width: 33.3333%; }
+
+.g__column-3 {
+  width: 25%; }
+
+.g__column-2 {
+  width: 16.6667%; }
+
+.g__column-1 {
+  width: 8.3333%; }
+
 .material-icons {
   font-size: 36px;
   margin: 12px;
   color: #F7FFF7;
   line-height: 1.42;
-  cursor: pointer;
-  user-select: none; }
+  cursor: pointer; }
 
 * {
   box-sizing: border-box;
@@ -16,13 +78,12 @@ html {
   overflow-x: hidden; }
 
 body {
-  width: 100vw;
   overflow-x: hidden;
   background-image: url("../assets/images/background.svg");
   background-size: 960px 540px; }
 
 main, header, footer {
-  width: 60vw;
+  width: 60%;
   margin: 0 auto;
   max-width: 1140px; }
 
@@ -112,12 +173,13 @@ header > h2 {
     display: flex;
     flex-direction: column;
     margin-top: 30vh;
-    margin-left: 40%;
+    margin-left: 45vw;
     align-items: flex-start; }
 
   .nav-items > a {
-    margin-left: 0;
-    margin-top: 5vh; } }
+    margin-top: 5vh;
+    text-align: left;
+    margin-left: 0; } }
 @media only screen and (max-width: 500px) {
   .cross--isvisible {
     margin-right: 36px; }
@@ -129,48 +191,49 @@ header > h2 {
     margin-left: 12px; } }
 body, input, button, textarea {
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+  font-size: 0.95em;
   font-weight: 400;
   line-height: 1.42;
   color: #F7FFF7; }
 
 h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 36px;
+  font-size: 2em;
   font-weight: 700;
   line-height: 1.42; }
 
-h2, h3, h4, h5, h6 {
+h2 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-size: 1.750em;
   font-weight: 700;
   line-height: 1.42; }
+
+h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 2.84; }
 
 a {
   text-decoration: none;
   color: #F7FFF7;
   transition: 0.5s;
-  line-height: 1.42; }
+  line-height: 1.42;
+  font-size: 1.125em; }
 
 a:hover {
   color: #5DFDCB; }
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 24px; }
+    font-size: 1.375em; }
 
   h2, h3, h4, h5, h6, a {
-    font-size: 18px; }
+    font-size: 1.125em; }
 
-  body, input, textarea {
-    font-size: 14px; } }
+  body, input, button, textarea {
+    font-size: 0.75em; } }
 .column-container {
-  /*
-  display:flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  position:relative;
-  */
   background: #525170;
   border-radius: 12px;
   padding: 0 5%;
@@ -212,7 +275,7 @@ button:focus {
   border: 2px solid #5DFDCB;
   border-radius: 75px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 1.250em;
   color: #F7FFF7;
   transition: 0.5s; }
 
@@ -245,7 +308,7 @@ textarea, textarea:focus {
 
 .rocket {
   display: block;
-  margin: 50px auto;
+  margin: 100px auto;
   max-width: 150px;
   animation-name: rocket-lives;
   animation-duration: 4s;
@@ -273,10 +336,28 @@ textarea, textarea:focus {
   margin: 0 auto;
   display: block; }
 
+.portfolio-container {
+  border-radius: 12px;
+  padding: 0 5%;
+  margin: 350px auto;
+  text-align: center; }
+
+.portfolio-item {
+  background: #525170;
+  padding: 20px 0 20px 0;
+  border-radius: 12px;
+  margin: 0 19px; }
+
+.portfolio-item img {
+  width: 100%; }
+
+.portfolio-item p, .portfolio-item h2 {
+  padding: 12px; }
+
 .quote {
   margin-right: 10px; }
 
-.quote h1, p {
+.quote h1, .quote p {
   text-align: right;
   margin: 2px; }
 
@@ -284,9 +365,6 @@ textarea, textarea:focus {
   .moon {
     width: 50vw; } }
 @media only screen and (max-width: 768px) {
-  .column-container {
-    flex-direction: column; }
-
   .column-3 {
     width: 100%; }
 
