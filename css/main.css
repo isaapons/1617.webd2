@@ -396,9 +396,7 @@ textarea:focus, input:focus {
   margin-top: 75px; }
 
 .abt__box0 {
-  margin-bottom: 75px;
-  width: 40vw;
-  max-width: 1140px; }
+  margin: 0 auto 75px auto; }
 
 .abt__box1 {
   float: left;
@@ -495,13 +493,13 @@ textarea:focus, input:focus {
 .s__bubble {
   margin: 0 auto;
   position: relative;
-  width: 90%;
-  height: 120px;
+  width: 75%;
+  height: 200px;
   background: #525170;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
-  padding: 12px 25%; }
+  padding: 12px 12%; }
 
 .portfolio-container {
   border-radius: 12px;

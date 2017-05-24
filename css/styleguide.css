@@ -431,13 +431,13 @@ textarea:focus, input:focus {
 .s__bubble {
   margin: 0 auto;
   position: relative;
-  width: 90%;
-  height: 120px;
+  width: 75%;
+  height: 200px;
   background: #525170;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
-  padding: 12px 25%; }
+  padding: 12px 12%; }
 
 .portfolio-container {
   border-radius: 12px;
