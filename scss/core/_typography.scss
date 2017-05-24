@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
-body, input, button, textarea,  {
+body {
   font-family: 'Quicksand', sans-serif;
-  font-size: 0.95em;
+  color: #F7FFF7;
+}
+
+p, input, button, textarea,  {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1em;
   font-weight: 400;
   line-height: 1.42;
-  color: #F7FFF7;
+
 }
 
 h1 {

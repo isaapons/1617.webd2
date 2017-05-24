@@ -24,5 +24,42 @@
     return false;
   });
 
+  //EMPLOYEE TEXT BUBBLES
+
+  // INIT BUBBLE
+  document.querySelector('.emp1').classList.add('active--pic');
+
+  // CHANGE BUBBLE
+  var employee1Element = document.querySelector('.emp1');
+  var employee2Element = document.querySelector('.emp2');
+  var employee3Element = document.querySelector('.emp3');
+
+  employee2Element.addEventListener('click', function(ev){
+    ev.preventDefault();
+    document.querySelector('.s__bubble').textContent = "Houston ehm Zana we have a problem, is iets wat ik hier dagelijks hoor. Gelukkig ben ik er dan om die problemen op te lossen samen met mijn andere backend developers @spacecadet.";
+    document.querySelector('.emp2').classList.add('active--pic');
+    document.querySelector('.emp1').classList.remove('active--pic');
+    document.querySelector('.emp3').classList.add('inactive--pic');
+  });
+
+  employee3Element.addEventListener('click', function(ev){
+    ev.preventDefault();
+    document.querySelector('.s__bubble').textContent = "NIGGAN IGAA NIGAAN IGAANIGAANIGAA";
+    document.querySelector('.emp2').classList.remove('active--pic');
+    document.querySelector('.emp1').classList.add('inactive--pic');
+    document.querySelector('.emp3').classList.add('active--pic');
+    document.querySelector('.emp3').classList.remove('inactive--pic');
+  });
+
+  employee1Element.addEventListener('click', function(ev){
+    ev.preventDefault();
+    document.querySelector('.s__bubble').textContent = "BITCH BITCH BITCH BITCH BITCH BITCH";
+    document.querySelector('.emp2').classList.remove('active--pic');
+    document.querySelector('.emp3').classList.add('inactive--pic');
+    document.querySelector('.emp1').classList.add('active--pic');
+    document.querySelector('.emp1').classList.remove('inactive--pic');
+  });
+
+
 
 })();

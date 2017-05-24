@@ -21,10 +21,28 @@
 .picture > img {
   border-style: none;
   border-radius: 50%;
+  opacity: 0.3;
+  transition: 0.5s;
+  max-width: 250px;
+  width: 100%;
+  min-width: 100px;
 }
 
 .pic__text {
   text-align: center;
+}
+
+.picture > img:hover {
+  cursor: pointer;
+}
+
+.active--pic > img {
+  opacity: 1;
+
+}
+
+.inactive--pic > img {
+  opacity: 0.3;
 }
 
 // MAP
@@ -34,7 +52,7 @@
   float: right;
   margin: 24px 0;
   height: 400px;
-  width: 70%;
+  width: 60%;
   border-style: none;
   border-radius: 12px;
   -webkit-transform: translate3d(0px, 0px, 0px);

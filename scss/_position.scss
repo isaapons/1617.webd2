@@ -1,14 +1,22 @@
 
-//about
+//ABOUT
 
 .abt__box {
   margin-top: 75px;
 
 }
+
+.abt__box0 {
+  margin-bottom: 75px;
+  width: 40vw;
+  max-width: 1140px;
+}
+
 .abt__box1 {
   float: left;
-  width: 30%;
+  width: 35%;
 }
+
 .abt__info {
   display: flex;
   flex-direction: row;

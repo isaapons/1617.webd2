@@ -75,100 +75,105 @@
     <div class="g__wrapper">
       <div class="g__container">
         <div class="g__row abt__box">
-          <div class="g__column g__column-12 ">
-            <div class="abt__box1">
+          <div class="g__column g__column-12 abt__box0">
+            <p> Ons team cosmonauten, zorgt altijd voor een geslaagde liftoff van uw project.
+              In alles qua new media exceleren wij. </p>
+            </div>
+            <div class="g__column g__column-12 ">
+              <div class="abt__box1">
 
 
-              <div class="abt__info">
+                <div class="abt__info">
 
-                <i class="material-icons">phone</i> <h3>0497319543</h3>
+                  <i class="material-icons">phone</i> <h3>0497319543</h3>
+                </div>
+                <div class="abt__info">
+                  <i class="material-icons">mail</i> <h3>info@spacecadet.com</h3>
+                </div>
+                <div class="abt__info">
+                  <i class="material-icons">location_on</i> <h3>Holdaal 34 9000 Gent</h3>
+                </div>
               </div>
-              <div class="abt__info">
-                <i class="material-icons">mail</i> <h3>info@spacecadet.com</h3>
+
+              <div id="map"></div>
+              <script>
+              function initMap() {
+                var holdaal = {lat: 51.042, lng: 3.715};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 15,
+                  center: holdaal
+                });
+                var marker = new google.maps.Marker({
+                  position: holdaal,
+                  map: map
+                });
+              }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVTxcFsBN7744nnOrOu6LNi-LmMSfzTSA&callback=initMap">
+              </script>
+            </div>
+
+
+
+
+            <div class="g__column g__column-12 employee_column">
+              <h2>Het Team</h2>
+
+              <div class="employeebox clear">
+
+
+                <div class="employees">
+
+                  <div class="picture emp1">
+                    <img  class="active--pic"src="assets/images/me.jpg" alt="employee" />
+                  </div>
+
+                  <div class="pic__text">
+                    <h3>Isaac Ponseele</h3>
+                  </div>
+
+                </div>
+
+                <div class="employees">
+
+                  <div class="picture emp2">
+                    <img class="active--pic inactive--pic"src="assets/images/jorg.png" alt="employee" />
+                  </div>
+
+                  <div class="pic__text">
+                    <h3>Jorg Steyaert</h3>
+                  </div>
+
+                </div>
+
+                <div class="employees">
+
+                  <div class="picture emp3">
+                    <img class="active--pic"src="assets/images/zana.png" alt="employee" />
+                  </div>
+
+                  <div class="pic__text">
+                    <h3>Zana Van Bossele</h3>
+                  </div>
+
+                </div>
               </div>
-              <div class="abt__info">
-                <i class="material-icons">location_on</i> <h3>Holdaal 34 9000 Gent</h3>
+
+              <div class="s__bubble clear">
+                <h2>I wanna die?</h2>
+                <p>eeee</p>
               </div>
             </div>
 
-            <div id="map"></div>
-            <script>
-            function initMap() {
-              var holdaal = {lat: 51.042, lng: 3.715};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: holdaal
-              });
-              var marker = new google.maps.Marker({
-                position: holdaal,
-                map: map
-              });
-            }
-            </script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVTxcFsBN7744nnOrOu6LNi-LmMSfzTSA&callback=initMap">
-            </script>
           </div>
-
-
-
-
-          <div class="g__column g__column-12 employee_column">
-            <h2>Het Team</h2>
-
-            <div class="employeebox clear">
-
-
-              <div class="employees">
-
-                <div class="picture">
-                  <img src="https://unsplash.it/250" alt="employee" />
-                </div>
-
-                <div class="pic__text">
-                  <h3>Isaac Ponseele</h3>
-                </div>
-
-              </div>
-
-              <div class="employees">
-
-                <div class="picture">
-                  <img src="https://unsplash.it/250" alt="employee" />
-                </div>
-
-                <div class="pic__text">
-                  <h3>Jorg Steyaert</h3>
-                </div>
-
-              </div>
-
-              <div class="employees">
-
-                <div class="picture">
-                  <img src="https://unsplash.it/250" alt="employee" />
-                </div>
-
-                <div class="pic__text">
-                  <h3>Zana Van Bossele</h3>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="s__bubble clear">
-              <h2>I wanna die?</h2>
-              <p>eeee</p>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <img class="moon" src="assets/svg/moonhalf.svg" alt="moon">
-  </footer>
-</body>
-</html>
+    <footer>
+      <img class="moon" src="assets/svg/moonhalf.svg" alt="moon">
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
