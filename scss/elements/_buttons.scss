@@ -2,7 +2,7 @@ button:focus {
   outline:0;
 }
 
-$btn-soft-height-radius: 75px;
+$btn-soft-height-radius: 60px;
 .btn {
   display: block;
   width: 200px;
@@ -10,7 +10,7 @@ $btn-soft-height-radius: 75px;
   margin: 12px 12px 12px 12px;
   background: none;
   border: 2px solid #5DFDCB;
-  border-radius: $btn-soft-height-radius;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 1.250em;
   color: #F7FFF7;

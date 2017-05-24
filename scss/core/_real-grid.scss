@@ -73,3 +73,9 @@
 .g__column-1 {
   width: 8.3333%;
 }
+
+@media only screen and (max-width: 1600px) {
+  .g__column-3 {
+    width: 50%;
+  }
+}

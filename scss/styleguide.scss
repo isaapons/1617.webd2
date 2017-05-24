@@ -11,6 +11,7 @@
 "elements/buttons.scss",
 "elements/forms.scss",
 "background/space.scss",
+"elements/cards.scss",
 "core/portfolio-grid.scss";
 
 .banner {
@@ -25,7 +26,7 @@
 .colorsplash {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 12px;
   border-style: none;
   margin: 24px;
   display: table;

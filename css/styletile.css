@@ -6,11 +6,11 @@ button:focus {
 .btn {
   display: block;
   width: 200px;
-  height: 75px;
+  height: 60px;
   margin: 12px 12px 12px 12px;
   background: none;
   border: 2px solid #5DFDCB;
-  border-radius: 75px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 1.250em;
   color: #F7FFF7;
@@ -78,9 +78,9 @@ header > h2 {
     width: 25px; }
 
   .main-nav {
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: block;
     background: #525170;
     top: 0;
@@ -142,7 +142,7 @@ h1 {
 
 h2 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.750em;
+  font-size: 1.7em;
   font-weight: 700;
   line-height: 1.42; }
 
@@ -171,7 +171,7 @@ a:hover {
 
   body, input, button, textarea {
     font-size: 0.75em; } }
-form > input, input:focus, textarea, textarea:focus {
+form > input, textarea {
   border: none;
   border-style: none;
   border-radius: 10px;
@@ -181,10 +181,14 @@ form > input, input:focus, textarea, textarea:focus {
   padding: 12px;
   margin: 24px; }
 
-textarea, textarea:focus {
+textarea {
   resize: none;
   width: 448px;
   height: 448px; }
+
+textarea:focus, input:focus {
+  background: #5C5B7F;
+  outline: none; }
 
 .rocket {
   display: block;

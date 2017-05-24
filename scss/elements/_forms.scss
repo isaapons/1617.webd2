@@ -1,4 +1,4 @@
-form > input, input:focus, textarea, textarea:focus {
+form > input, textarea {
 	border:none;
 	border-style: none;
 	border-radius: 10px;
@@ -9,9 +9,14 @@ form > input, input:focus, textarea, textarea:focus {
 	margin: 24px;
 }
 
-textarea, textarea:focus {
+textarea,  {
 	resize: none;
 	width: 448px;
 	height: 448px
 
+}
+
+textarea:focus, input:focus {
+	background: $h-background;
+	outline: none;
 }

@@ -40,10 +40,11 @@ header > h2 {
 // RESPONSIVE
 
 @media only screen and (max-width: 975px) {
-
 	header {
 		width: 60vw;
 	}
+
+
 
 	.hamburger {
 		display: inline-block;
@@ -54,9 +55,9 @@ header > h2 {
 	}
 
 	.main-nav {
-		position: absolute;
+		position: fixed;
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		display: block;
 		background: $text-background;
 		top: 0;

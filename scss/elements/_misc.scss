@@ -1,0 +1,43 @@
+// PEOPLE
+.employee_column {
+  margin-top: 50px;
+}
+
+.employee_column > h2 {
+  text-align: center;
+}
+.employeebox {
+  display: flex;
+  justify-content: center;
+
+
+}
+.employees {
+  width: 250px;
+  margin: 48px;
+
+
+}
+.picture > img {
+  border-style: none;
+  border-radius: 50%;
+}
+
+.pic__text {
+  text-align: center;
+}
+
+// MAP
+
+#map {
+  pointer-events: none;
+  float: right;
+  margin: 24px 0;
+  height: 400px;
+  width: 70%;
+  border-style: none;
+  border-radius: 12px;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+}
