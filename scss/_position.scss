@@ -46,16 +46,19 @@
 .formbox {
   float: right;
   width: 50%;
+  margin-top: 36px;
 }
 
 .formbox1 {
   float: right;
   width: 50%;
+  margin-top: 36px;
 }
 
 @media only screen and (max-width:976px) {
   .formbox {
     width: 100%;
+    margin-top: 0;
   }
   .formbox1 {
     width: 100%;
@@ -64,4 +67,30 @@
   .former {
     padding: 0;
   }
+}
+
+// DIENSTEN
+
+// PORTFOLIO
+
+.portfolio-container {
+  border-radius: 12px;
+  padding: 0 5% ;
+  margin: 350px auto;
+  text-align: center;
+}
+
+.portfolio-item {
+  background: $text-background;
+  padding: 20px 0 20px 0;
+  border-radius: 12px;
+  margin:0 19px;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.portfolio-item p, .portfolio-item h2 {
+  padding: 12px;
 }

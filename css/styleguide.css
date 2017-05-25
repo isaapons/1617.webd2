@@ -392,25 +392,59 @@ textarea:focus, input:focus {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  transition: transform .5s;
-  margin: 12px; }
+  margin: 48px 12px 0 12px; }
 
 .d__card__text {
   background: #525170;
-  width: 330px;
-  height: 400px;
+  width: 30%;
   border-style: none;
   border-radius: 12px 0 0 12px;
   overflow: hidden;
-  padding: 24px; }
+  padding: 24px;
+  max-height: 400px; }
 
-.d__card__text::after {
-  padding-bottom: 24px; }
+.textoverflow-fix {
+  max-height: 352px;
+  overflow: hidden; }
+
+.d__card__text h3 > a {
+  position: absolute;
+  margin: 24px;
+  bottom: 0;
+  left: 30%;
+  color: #5DFDCB; }
+
+.d__card__picture {
+  width: 70%;
+  border-style: none;
+  border-radius: 0 12px 12px 0;
+  overflow: hidden; }
 
 .d__card__picture > img {
   border-style: none;
   border-radius: 0 12px 12px 0; }
 
+@media only screen and (max-width: 1024px) {
+  .d__card {
+    flex-direction: column;
+    margin: 48px 0; }
+
+  .d__card__text {
+    width: 100%;
+    margin: 0;
+    border-radius: 12px 12px 0 0; }
+
+  .d__card__picture {
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 12px 12px; }
+
+  .d__card__picture > img {
+    border-radius: 0 0 12px 12px; }
+
+  .d__card__text h3 > a {
+    top: 85;
+    left: 12px; } }
 .first-img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px; }
@@ -459,24 +493,6 @@ textarea:focus, input:focus {
 @media only screen and (max-width: 768px) {
   .s__bubble {
     width: 100%; } }
-.portfolio-container {
-  border-radius: 12px;
-  padding: 0 5%;
-  margin: 350px auto;
-  text-align: center; }
-
-.portfolio-item {
-  background: #525170;
-  padding: 20px 0 20px 0;
-  border-radius: 12px;
-  margin: 0 19px; }
-
-.portfolio-item img {
-  width: 100%; }
-
-.portfolio-item p, .portfolio-item h2 {
-  padding: 12px; }
-
 .banner {
   text-align: center; }
 
