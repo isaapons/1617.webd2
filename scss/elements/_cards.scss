@@ -110,10 +110,16 @@
   display: flex;
   align-items: center;
   width: 75%;
-  height: 200px;
+
   background: $text-background;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
   padding: 12px 12%;
+}
+
+@media only screen and (max-width: 768px) {
+  .s__bubble {
+    width: 100%;
+  }
 }
