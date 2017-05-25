@@ -28,6 +28,7 @@
 
   // INIT BUBBLE
   document.querySelector('.emp1').classList.add('active--pic');
+  document.querySelector('.s__bubble').textContent = "Als oprichter van Space Cadet, heeft het bedrijf al altijd een speciale plaats in mijn hart gehad.Ondanks de grote boom die wij de laatste jaren gekend hebben, ben ik nog steeds mezelf gebleven.Ik zorg bij Space Cadet voor alles van fotografie tot audio tot webdesign.Ik sta altijd klaar voor u de klant en mijn collega's kunnen ook steeds op me rekenen";
 
   // CHANGE BUBBLE
   var employee1Element = document.querySelector('.emp1');
@@ -36,7 +37,7 @@
 
   employee2Element.addEventListener('click', function(ev){
     ev.preventDefault();
-    document.querySelector('.s__bubble').textContent = "Houston ehm Zana we have a problem, is iets wat ik hier dagelijks hoor. Gelukkig ben ik er dan om die problemen op te lossen samen met mijn andere backend developers @spacecadet.";
+    document.querySelector('.s__bubble').textContent = "Toen Isaac mij vroeg of ik deel wilde maken van Space Cadet, heb ik direct ingestemd. Ik kon me helemaal vinden in de visie die hij voor dit bedrijf had. Sindsdien ben ik frontend developer hier bij Space Cadet. Samen met u zorg ik voor een prachtige uitwerking van uw ideeën!";
     document.querySelector('.emp2').classList.add('active--pic');
     document.querySelector('.emp1').classList.remove('active--pic');
     document.querySelector('.emp3').classList.add('inactive--pic');
@@ -44,7 +45,7 @@
 
   employee3Element.addEventListener('click', function(ev){
     ev.preventDefault();
-    document.querySelector('.s__bubble').textContent = "NIGGAN IGAA NIGAAN IGAANIGAANIGAA";
+    document.querySelector('.s__bubble').textContent = "Houston ehm Zana we have a problem, is iets wat ik hier dagelijks hoor. Gelukkig ben ik er dan om die problemen op te lossen samen met mijn andere backend developers @spacecadet. Er heerst hier altijd een toffe, relaxte sfeer die het mogelijk maakt mij goed te focussen op mijn werk.";
     document.querySelector('.emp2').classList.remove('active--pic');
     document.querySelector('.emp1').classList.add('inactive--pic');
     document.querySelector('.emp3').classList.add('active--pic');
@@ -53,7 +54,7 @@
 
   employee1Element.addEventListener('click', function(ev){
     ev.preventDefault();
-    document.querySelector('.s__bubble').textContent = "BITCH BITCH BITCH BITCH BITCH BITCH";
+    document.querySelector('.s__bubble').textContent = "Als oprichter van Space Cadet, heeft het bedrijf al altijd een speciale plaats in mijn hart gehad.Ondanks de grote boom die wij de laatste jaren gekend hebben, ben ik nog steeds mezelf gebleven.Ik zorg bij Space Cadet voor alles van fotografie tot audio tot webdesign.Ik sta altijd klaar voor u de klant en mijn collega's kunnen ook steeds op me rekenen";
     document.querySelector('.emp2').classList.remove('active--pic');
     document.querySelector('.emp3').classList.add('inactive--pic');
     document.querySelector('.emp1').classList.add('active--pic');

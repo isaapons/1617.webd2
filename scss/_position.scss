@@ -24,3 +24,9 @@
   justify-content: flex-start;
   align-items: flex-end;
 }
+
+@media only screen and (max-width: 1500px) {
+.abt__box1 {
+  width: 100%;
+}
+}

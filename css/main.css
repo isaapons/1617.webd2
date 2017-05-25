@@ -358,7 +358,7 @@ textarea:focus, input:focus {
 
 .employees {
   width: 250px;
-  margin: 48px; }
+  margin: 6.5%; }
 
 .picture > img {
   border-style: none;
@@ -373,7 +373,8 @@ textarea:focus, input:focus {
   text-align: center; }
 
 .picture > img:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  transform: scale(1.1); }
 
 .active--pic > img {
   opacity: 1; }
@@ -392,6 +393,9 @@ textarea:focus, input:focus {
   -webkit-transform: translate3d(0px, 0px, 0px);
   -webkit-mask-image: -webkit-radial-gradient(white, black); }
 
+@media only screen and (max-width: 1500px) {
+  #map {
+    width: 100%; } }
 .abt__box {
   margin-top: 75px; }
 
@@ -408,6 +412,9 @@ textarea:focus, input:focus {
   justify-content: flex-start;
   align-items: flex-end; }
 
+@media only screen and (max-width: 1500px) {
+  .abt__box1 {
+    width: 100%; } }
 .card__container {
   display: flex;
   justify-content: flex-start;
@@ -491,8 +498,11 @@ textarea:focus, input:focus {
   float: right; }
 
 .s__bubble {
-  margin: 0 auto;
-  position: relative;
+  font-size: 1.1em;
+  line-height: 1.42;
+  margin: 0 auto 75px auto;
+  display: flex;
+  align-items: center;
   width: 75%;
   height: 200px;
   background: #525170;

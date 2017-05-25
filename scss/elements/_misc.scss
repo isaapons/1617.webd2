@@ -14,7 +14,7 @@
 }
 .employees {
   width: 250px;
-  margin: 48px;
+  margin: 6.5%;
 
 
 }
@@ -34,6 +34,7 @@
 
 .picture > img:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .active--pic > img {
@@ -44,6 +45,8 @@
 .inactive--pic > img {
   opacity: 0.3;
 }
+
+
 
 // MAP
 
@@ -58,4 +61,10 @@
   -webkit-transform: translate3d(0px, 0px, 0px);
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 
+}
+
+@media only screen and (max-width: 1500px) {
+  #map {
+    width: 100%;
+  }
 }
