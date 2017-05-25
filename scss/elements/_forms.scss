@@ -9,7 +9,7 @@ form > input, textarea {
 	margin: 24px 2.5% 24px 2.5%;
 }
 
-textarea,  {
+textarea {
 	resize: none;
 	width:95%;
 	margin: 24px 2.5% 24px 2.5%;
@@ -19,4 +19,12 @@ textarea,  {
 textarea:focus, input:focus {
 	background: $h-background;
 	outline: none;
+}
+
+@media only screen and (max-width:976px) {
+textarea, form > input {
+	width: 100%;
+	margin: 24px 0 24px 0;
+}
+
 }

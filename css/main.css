@@ -64,7 +64,10 @@
 
 @media only screen and (max-width: 1600px) {
   .g__column-3 {
-    width: 50%; } }
+    width: 50%; }
+
+  .g__column {
+    padding: 0; } }
 .material-icons {
   font-size: 36px;
   margin: 12px;
@@ -324,6 +327,10 @@ textarea:focus, input:focus {
   background: #5C5B7F;
   outline: none; }
 
+@media only screen and (max-width: 976px) {
+  textarea, form > input {
+    width: 100%;
+    margin: 24px 0 24px 0; } }
 .rocket {
   display: block;
   margin: 100px auto;
@@ -447,7 +454,7 @@ textarea:focus, input:focus {
   float: right;
   width: 50%; }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 976px) {
   .formbox {
     width: 100%; }
 
