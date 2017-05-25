@@ -10,6 +10,7 @@ p, input, button, textarea,  {
   font-size: 1.1em;
   font-weight: 400;
   line-height: 1.42;
+  color: #F7FFF7;
 
 }
 
@@ -52,9 +53,11 @@ a:hover {
   h1 {
     font-size: 1.375em;
   }
-
-  h2, h3, h4, h5, h6, a {
-    font-size: 1.125em;
+  h2 {
+    font-size: 1.3em;
+  }
+  h3, h4, h5, h6, a {
+    font-size: 1.2em;
   }
 
   body, input, button, textarea {

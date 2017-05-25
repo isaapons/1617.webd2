@@ -70,117 +70,45 @@
     </nav>
 
   </header>
-  <main>
 
+  <main>
     <div class="g__wrapper">
       <div class="g__container">
-        <div class="g__row abt__box">
-          <div class="g__column g__column-12">
-            <div class="abt__box0">
+        <div class="g__row">
+
+          <div class="g__column g__column-12 former">
+            <h2>Contact</h2>
+            <p>Heb je nog vragen of wil je ons gewoon een berichtje sturen? Dat kan hier!</p>
 
 
-              <p> Space Cadet is een klein studentenproject dat over de jaren heen, groot succes kende. Wat vroeger een klein bedrijfje met als enige werknemer Isaac Ponseele was
-                , is nu uitgegroeid tot een volwaardig venootschap dat in meerdere takken van de new media wereld opereert.
-                Ons team cosmonauten, zorgt altijd voor een geslaagde liftoff van uw project.
-                Wij staan altijd klaar om uw new media gerelateerde vragen te beantwoorden of problemen op te lossen.
-                Je kan het niet gek genoeg bedenken, in ieder mogelijke categorie staat er bij Space Cadet een expert voor u klaar!
-              </p>
+
+            <div class="formbox1">
+
+
+              <form>
+                <input type="text" name="firstname" placeholder='Naam'>
+              </form>
+
+              <form>
+                <input type="text" name="lastname" placeholder='Familienaam'>
+              </form>
+              <form>
+                <input type="email" name="mail" placeholder='Mail'>
+              </form>
+
+              <form>
+                <input type="tel" name="usrtel" placeholder='Gsm-nummer'>
+              </form>
             </div>
-          </div>
-          <div class="g__column g__column-12 ">
-            <div class="abt__box1">
-
-
-              <div class="abt__info">
-
-                <i class="material-icons">phone</i> <h3>0497319543</h3>
-              </div>
-              <div class="abt__info">
-                <i class="material-icons">mail</i> <h3>info@spacecadet.com</h3>
-              </div>
-              <div class="abt__info">
-                <i class="material-icons">location_on</i> <h3>Holdaal 34 9000 Gent</h3>
-              </div>
+            <div class="formbox">
+              <textarea name="bericht" rows="8" cols="80" placeholder="Bericht"></textarea>
             </div>
-
-            <div id="map"></div>
-            <script>
-            function initMap() {
-              var holdaal = {lat: 51.042, lng: 3.715};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: holdaal
-              });
-              var marker = new google.maps.Marker({
-                position: holdaal,
-                map: map
-              });
-            }
-            </script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVTxcFsBN7744nnOrOu6LNi-LmMSfzTSA&callback=initMap">
-            </script>
-          </div>
-
-
-
-
-          <div class="g__column g__column-12 employee_column">
-            <h2>Het Team</h2>
-
-            <div class="employeebox clear">
-
-
-              <div class="employees">
-
-                <div class="picture emp1">
-                  <img  class="active--pic"src="assets/images/me.jpg" alt="employee" />
-                </div>
-
-                <div class="pic__text">
-                  <h3>Isaac Ponseele</h3>
-                </div>
-
-              </div>
-
-              <div class="employees">
-
-                <div class="picture emp2">
-                  <img class="active--pic inactive--pic"src="assets/images/jorg.png" alt="employee" />
-                </div>
-
-                <div class="pic__text">
-                  <h3>Jorg Steyaert</h3>
-                </div>
-
-              </div>
-
-              <div class="employees">
-
-                <div class="picture emp3">
-                  <img class="active--pic"src="assets/images/zana.png" alt="employee" />
-                </div>
-
-                <div class="pic__text">
-                  <h3>Zana Van Bossele</h3>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="s__bubble clear">
-
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <img class="moon" src="assets/svg/moonhalf.svg" alt="moon">
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+  <footer>
+
+  </footer>

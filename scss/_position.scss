@@ -22,11 +22,42 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
 @media only screen and (max-width: 1500px) {
-.abt__box1 {
-  width: 100%;
+  .abt__box1 {
+    width: 100%;
+  }
 }
+
+// CONTACT
+.former {
+  margin: 75px auto;
+}
+
+.former h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.former p {
+  text-align: center;
+}
+.formbox {
+  float: right;
+  width: 50%;
+}
+
+.formbox1 {
+  float: right;
+  width: 50%;
+}
+
+@media only screen and (max-width:975px) {
+  .formbox {
+    width: 100%;
+  }
+  .formbox1 {
+    width: 100%;
+  }
 }

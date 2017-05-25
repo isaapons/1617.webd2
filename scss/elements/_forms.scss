@@ -2,18 +2,18 @@ form > input, textarea {
 	border:none;
 	border-style: none;
 	border-radius: 10px;
-	width: 200px;
+	width: 95%;
 	height: 50px;
 	background:#525170;
 	padding: 12px;
-	margin: 24px;
+	margin: 24px 2.5% 24px 2.5%;
 }
 
 textarea,  {
 	resize: none;
-	width: 448px;
-	height: 448px
-
+	width:95%;
+	margin: 24px 2.5% 24px 2.5%;
+	height: 344px
 }
 
 textarea:focus, input:focus {

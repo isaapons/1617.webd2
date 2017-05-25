@@ -72,6 +72,9 @@
   line-height: 1.42;
   cursor: pointer; }
 
+@media only screen and (max-width: 768px) {
+  .material-icons {
+    font-size: 24px; } }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -200,7 +203,8 @@ p, input, button, textarea {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
   font-weight: 400;
-  line-height: 1.42; }
+  line-height: 1.42;
+  color: #F7FFF7; }
 
 h1 {
   font-family: 'Quicksand', sans-serif;
@@ -234,8 +238,11 @@ a:hover {
   h1 {
     font-size: 1.375em; }
 
-  h2, h3, h4, h5, h6, a {
-    font-size: 1.125em; }
+  h2 {
+    font-size: 1.3em; }
+
+  h3, h4, h5, h6, a {
+    font-size: 1.2em; }
 
   body, input, button, textarea {
     font-size: 0.75em; } }
@@ -301,16 +308,17 @@ form > input, textarea {
   border: none;
   border-style: none;
   border-radius: 10px;
-  width: 200px;
+  width: 95%;
   height: 50px;
   background: #525170;
   padding: 12px;
-  margin: 24px; }
+  margin: 24px 2.5% 24px 2.5%; }
 
 textarea {
   resize: none;
-  width: 448px;
-  height: 448px; }
+  width: 95%;
+  margin: 24px 2.5% 24px 2.5%;
+  height: 344px; }
 
 textarea:focus, input:focus {
   background: #5C5B7F;
@@ -416,10 +424,34 @@ textarea:focus, input:focus {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end; }
+  align-items: baseline; }
 
 @media only screen and (max-width: 1500px) {
   .abt__box1 {
+    width: 100%; } }
+.former {
+  margin: 75px auto; }
+
+.former h2 {
+  text-align: center;
+  margin-bottom: 48px; }
+
+.former p {
+  text-align: center; }
+
+.formbox {
+  float: right;
+  width: 50%; }
+
+.formbox1 {
+  float: right;
+  width: 50%; }
+
+@media only screen and (max-width: 975px) {
+  .formbox {
+    width: 100%; }
+
+  .formbox1 {
     width: 100%; } }
 .card__container {
   display: flex;
