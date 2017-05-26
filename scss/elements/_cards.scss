@@ -85,6 +85,35 @@
   border-radius: 0 12px 12px 0;
 }
 
+// TEXT ON THE RIGHT
+
+.d__cardr {
+  @extend .d__card;
+
+}
+.d__card__textr {
+  @extend .d__card__text;
+  border-radius: 0 12px 12px 0;
+}
+
+.d__card__picturer {
+  @extend .d__card__picture;
+  border-radius: 12px 0 0 12px;
+}
+
+.d__card__picturer img {
+  border-radius: 12px 0 0 12px;
+}
+
+.d__card__textr h3 > a {
+  display: block;
+  position: relative;
+  bottom: -24px;
+  float:left;
+  color: $cyan;
+}
+
+// RESPONSIVE
 
 @media only screen and (max-width: 1024px) {
   .d__card {
@@ -92,19 +121,19 @@
     margin: 48px 0;
   }
 
-  .d__card__text {
+  .d__card__text, .d__card__textr {
     width: 100%;
     margin: 0;
     border-radius: 12px 12px 0 0;
   }
 
-  .d__card__picture {
+  .d__card__picture, .d__card__picturer {
     width: 100%;
     margin: 0;
     border-radius: 0 0 12px 12px;
   }
 
-  .d__card__picture > img {
+  .d__card__picture > img, .d__card__picturer > img {
     border-radius: 0 0 12px 12px;
   }
 
@@ -112,7 +141,12 @@
     margin-top: 12px;
   }
 
+  .d__cardr {
+    flex-direction: column-reverse;
+  }
 }
+
+
 
 // LONG CARD
 

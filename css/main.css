@@ -511,13 +511,13 @@ textarea:focus, input:focus {
 .p__card__text p {
   float: right; }
 
-.d__card {
+.d__card, .d__cardr {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin: 48px 12px 48px 12px; }
 
-.d__card__text {
+.d__card__text, .d__card__textr {
   background: #525170;
   width: 30%;
   border-style: none;
@@ -534,43 +534,62 @@ textarea:focus, input:focus {
   overflow: hidden;
   margin-bottom: -12px; }
 
-.d__card__text h3 > a {
+.d__card__text h3 > a, .d__card__textr h3 > a {
   display: block;
   position: relative;
   bottom: -24px;
   float: right;
   color: #5DFDCB; }
 
-.d__card__picture {
+.d__card__picture, .d__card__picturer {
   border-style: none;
   border-radius: 0 12px 12px 0;
   overflow: hidden;
   max-height: 400px; }
 
-.d__card__picture > img {
+.d__card__picture > img, .d__card__picturer > img {
   border-style: none;
   border-radius: 0 12px 12px 0; }
 
+.d__card__textr {
+  border-radius: 0 12px 12px 0; }
+
+.d__card__picturer {
+  border-radius: 12px 0 0 12px; }
+
+.d__card__picturer img {
+  border-radius: 12px 0 0 12px; }
+
+.d__card__textr h3 > a {
+  display: block;
+  position: relative;
+  bottom: -24px;
+  float: left;
+  color: #5DFDCB; }
+
 @media only screen and (max-width: 1024px) {
-  .d__card {
+  .d__card, .d__cardr {
     flex-direction: column;
     margin: 48px 0; }
 
-  .d__card__text {
+  .d__card__text, .d__card__textr, .d__card__textr {
     width: 100%;
     margin: 0;
     border-radius: 12px 12px 0 0; }
 
-  .d__card__picture {
+  .d__card__picture, .d__card__picturer, .d__card__picturer {
     width: 100%;
     margin: 0;
     border-radius: 0 0 12px 12px; }
 
-  .d__card__picture > img {
+  .d__card__picture > img, .d__card__picturer > img, .d__card__picturer > img {
     border-radius: 0 0 12px 12px; }
 
-  .d__card__text h3 > a {
-    margin-top: 12px; } }
+  .d__card__text h3 > a, .d__card__textr h3 > a {
+    margin-top: 12px; }
+
+  .d__cardr {
+    flex-direction: column-reverse; } }
 .first-img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px; }
