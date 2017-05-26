@@ -415,6 +415,10 @@ textarea:focus, input:focus {
   .employees {
     margin: 5%;
     width: 95%; } }
+img {
+  border-style: none;
+  border-radius: 12px; }
+
 .abt__box {
   margin-top: 75px; }
 
@@ -467,12 +471,39 @@ textarea:focus, input:focus {
 .diensten h1 {
   text-align: center; }
 
+.ppic {
+  width: 45%; }
+
+.pbannerpic {
+  width: 75%;
+  margin-top: 50px;
+  float: right; }
+
 .p__box-1 {
   margin-top: 200px;
   float: right;
   width: 50%;
-  height: 200px; }
+  max-height: 200px; }
 
+.p__box-2 {
+  margin-top: 50px;
+  float: left;
+  width: 20%;
+  max-height: 442px; }
+
+@media only screen and (max-width: 1360px) {
+  .p__box-2 {
+    width: 100%; }
+
+  .pbannerpic {
+    width: 100%; } }
+@media only screen and (max-width: 1550px) {
+  .p__box-1 {
+    width: 100%;
+    margin-top: 50px; }
+
+  .ppic {
+    width: 100%; } }
 .card__container {
   display: flex;
   justify-content: center;
