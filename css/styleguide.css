@@ -367,7 +367,7 @@ textarea:focus, input:focus {
 .card {
   background: #525170;
   border-radius: 12px;
-  padding: 23px 24px; }
+  padding: 24px 24px; }
 
 .p__card:hover {
   transform: scale(1.01);

@@ -415,9 +415,14 @@ textarea:focus, input:focus {
   .employees {
     margin: 5%;
     width: 95%; } }
-img {
+img, iframe {
   border-style: none;
   border-radius: 12px; }
+
+iframe {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  margin-bottom: 50px; }
 
 .abt__box {
   margin-top: 75px; }
@@ -477,7 +482,8 @@ img {
 .pbannerpic {
   width: 75%;
   margin-top: 50px;
-  float: right; }
+  float: right;
+  margin-bottom: 50px; }
 
 .p__box-1 {
   margin-top: 200px;
