@@ -38,13 +38,13 @@
 
 
 // DIENSTEN
+
 .d__card {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 48px 12px 0 12px;
+  margin: 48px 12px 48px 12px;
 }
-
 
 .d__card__text {
   background: $text-background;
@@ -54,34 +54,37 @@
   overflow: hidden;
   padding: 24px;
   max-height: 400px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .textoverflow-fix {
-  max-height: 352px;
+  max-height: 364px;
   overflow: hidden;
+  margin-bottom: -12px;
 }
 
 .d__card__text h3 > a {
-  position: absolute;
-  margin: 24px;
-  bottom: 0;
-  left: 30%;
+  display: block;
+  position: relative;
+  bottom: -24px;
+  float:right;
   color: $cyan;
 }
 
-
 .d__card__picture {
-  width: 70%;
   border-style: none;
   border-radius: 0 12px 12px 0;
   overflow:hidden;
+  max-height: 400px;
 }
+
 .d__card__picture > img {
   border-style: none;
   border-radius: 0 12px 12px 0;
-
 }
+
 
 @media only screen and (max-width: 1024px) {
   .d__card {
@@ -106,8 +109,7 @@
   }
 
   .d__card__text h3 > a {
-    top:85%;
-    left: 12px;
+    margin-top: 12px;
   }
 
 }

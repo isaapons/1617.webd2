@@ -433,7 +433,7 @@ textarea:focus, input:focus {
 @media only screen and (max-width: 1500px) {
   .abt__box1 {
     width: 100%; } }
-.former {
+.fullwidth {
   margin: 75px auto; }
 
 .former h2 {
@@ -461,7 +461,7 @@ textarea:focus, input:focus {
   .formbox1 {
     width: 100%; }
 
-  .former {
+  .fullwidth {
     padding: 0; } }
 .portfolio-container {
   border-radius: 12px;
@@ -515,7 +515,7 @@ textarea:focus, input:focus {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 48px 12px 0 12px; }
+  margin: 48px 12px 48px 12px; }
 
 .d__card__text {
   background: #525170;
@@ -524,24 +524,28 @@ textarea:focus, input:focus {
   border-radius: 12px 0 0 12px;
   overflow: hidden;
   padding: 24px;
-  max-height: 400px; }
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .textoverflow-fix {
-  max-height: 352px;
-  overflow: hidden; }
+  max-height: 364px;
+  overflow: hidden;
+  margin-bottom: -12px; }
 
 .d__card__text h3 > a {
-  position: absolute;
-  margin: 24px;
-  bottom: 0;
-  left: 30%;
+  display: block;
+  position: relative;
+  bottom: -24px;
+  float: right;
   color: #5DFDCB; }
 
 .d__card__picture {
-  width: 70%;
   border-style: none;
   border-radius: 0 12px 12px 0;
-  overflow: hidden; }
+  overflow: hidden;
+  max-height: 400px; }
 
 .d__card__picture > img {
   border-style: none;
@@ -566,8 +570,7 @@ textarea:focus, input:focus {
     border-radius: 0 0 12px 12px; }
 
   .d__card__text h3 > a {
-    top: 85%;
-    left: 12px; } }
+    margin-top: 12px; } }
 .first-img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px; }
