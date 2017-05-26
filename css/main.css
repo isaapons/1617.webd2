@@ -463,6 +463,9 @@ textarea:focus, input:focus {
 
   .fullwidth {
     padding: 0; } }
+.diensten h1 {
+  text-align: center; }
+
 .portfolio-container {
   border-radius: 12px;
   padding: 0 5%;
